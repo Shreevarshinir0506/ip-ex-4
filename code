@@ -1,0 +1,94 @@
+1).
+<html>
+<head>
+</head>
+    <body>
+        <script>
+        var a=prompt("enter a sentences ");
+        var b=a.split(" ");
+        var c=''
+        for(i=0;i<b.length;i++){
+            if(b[i].length == 3){
+                c+=b[i];
+                c+=" "
+            }
+        }
+        document.write(c);
+        </script>
+      </body>
+</html>
+
+2).
+
+<html>
+    <head>
+
+    </head>
+    <body>
+       
+       
+        <script>
+        var a=prompt("enter a sentences ");
+        var b=a.split(" ");
+        for(i=0;i<b.length;i++){
+            for(j=i+1;j<b.length;j++){
+                if(b[i]>b[j]){
+                temp=b[i]
+                b[i]=b[j]
+                b[j]=temp
+            }
+        }
+        }
+        document.write(b[1]+' '+b.slice(b.lenth-2,1));
+        </script>
+           
+    </body>
+</html>
+
+3).
+<script>
+
+   const circle = {
+    radius: 5, // Define the radius of the circle
+    calculateArea: function() {
+        return (Math.PI * this.radius * this.radius).toFixed(2); // Calculate area using the formula: π * r^2
+    },
+    calculatePerimeter: function() {
+        return (2 * Math.PI * this.radius).toFixed(2); // Calculate perimeter (circumference) using the formula: 2 * π * r
+    }
+};
+
+// Calculate and print the area and perimeter of the circle
+alert("Area:"+ circle.calculateArea());
+alert("Perimeter:"+circle.calculatePerimeter());
+</script>
+
+
+
+4).
+<script>
+    function check(){
+var name=prompt("enter name")
+alert("welcome  "+name+"!")
+var date=new Date()
+var moths=["January", "February", "March", "April", "May", "June","July", "August", "September", "October", "November", "December"];
+var month=moths[date.getMonth()]
+document.write( month+" "+date.getDate()+","+date.getFullYear())
+document.write("<br>"+document.lastModified)
+}
+check()
+</script>
+
+5).
+<p id="my"  onmouseover="change()" onmouseout="restore()"> js is used to make a web dynamically use of web for the user </p>
+
+<script>
+function change() {
+    document.getElementById("my").style.color = "yellow";
+}
+
+function restore() {
+    document.getElementById("my").style.color = "black";
+
+}
+</script>
